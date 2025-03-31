@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Futuristic Shopping Reminder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="loginPage" class="container">
+        <h1>🔐 Secure Login</h1>
+        <input type="text" id="username" placeholder="Enter username">
+        <input type="password" id="password" placeholder="Enter password">
+        <button onclick="login()">Login</button>
+    </div>
+
+    <div id="shoppingPage" class="container hidden">
+        <h1>🛒 Shopping Reminder</h1>
+        <button class="logout-btn" onclick="logout()">Logout</button>
+        <div class="input-container">
+            <input type="text" id="itemInput" placeholder="Enter item">
+            <button onclick="addItem()">Add</button>
+        </div>
+        <div id="items" class="scrollable"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
